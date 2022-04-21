@@ -25,7 +25,7 @@ class Api::V1::FactsController < ApplicationController
       render jason: { message: 'Fact has been updated successfully'}, status: 200
     else
       render jason: { error: 'Unable to update Fact.'}, status: 400
-
+    end
   end
 
   def destroy
@@ -34,7 +34,7 @@ class Api::V1::FactsController < ApplicationController
       render jason: { message: 'Fact has been  successfully deleted'}, status: 200
     else
       render jason: { error: 'Unable to delete Fact.'}, status: 400
-
+    end
   end
 
   private

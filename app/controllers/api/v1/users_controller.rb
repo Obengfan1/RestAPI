@@ -26,7 +26,7 @@ class Api::V1::UsersController < ApplicationController
       @user.update(user_params)
       render jason: {message: 'User successfully updated.'}, status: 200
     else
-      render jason: {error: 'Unable to update User.'}, status 400
+      render jason: {error: 'Unable to update User.'}, status: 400
     end
   end
   # Delete /user/:id
